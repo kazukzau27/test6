@@ -14,13 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function (){
+/*Route::get('/', function (){
 
     return view('welcome');
     
 });
-
+*/
 
 
 Route::get('hello', 'HelloController@index');
+
+Route::post('hello', 'HelloController@post');
+
+/*Route::get('hello/{id?}', 'HelloController@index');*/
+
 
